@@ -1,5 +1,5 @@
-# hackathon-applitools-webdriverIO
-- https://applitools.com/cross-browser-testing-hackathon-v20-1-instructions/
+### hackathon-applitools-webdriverIO
+[Applitools hackathon page](https://applitools.com/cross-browser-testing-hackathon-v20-1-instructions/)
 
 **nstall**
 > npm i
