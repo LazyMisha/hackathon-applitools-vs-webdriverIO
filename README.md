@@ -1,1 +1,1 @@
-# hackathon-applitools-vs-webdriverIO
+# hackathon-applitools-webdriverIO
