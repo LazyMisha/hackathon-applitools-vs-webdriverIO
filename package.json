@@ -1,0 +1,32 @@
+{
+  "name": "hackathon-applitools-webdriverIO",
+  "version": "1.0.0",
+  "description": "visual tests hackathon",
+  "main": "index.js",
+  "dependencies": {
+    "@wdio/cli": "^5.23.0"
+  },
+  "devDependencies": {
+    "@wdio/local-runner": "^5.23.0",
+    "@wdio/mocha-framework": "^5.23.0",
+    "@wdio/spec-reporter": "^5.23.0",
+    "@wdio/sync": "^5.23.0",
+    "chromedriver": "^83.0.0",
+    "wdio-chromedriver-service": "^5.0.2",
+    "webdriverio": "^5.23.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LazyMisha/hackathon-applitools-webdriverIO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LazyMisha/hackathon-applitools-webdriverIO/issues"
+  },
+  "homepage": "https://github.com/LazyMisha/hackathon-applitools-webdriverIO#readme"
+}
