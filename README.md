@@ -5,4 +5,4 @@
 > npm i
 
 **run tests**
-> npm run test
+> npm run test-traditional
