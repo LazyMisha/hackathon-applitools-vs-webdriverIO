@@ -21,8 +21,8 @@
     "test": "./node_modules/.bin/wdio wdio.conf.js",
     "test-firefox-laptop": "env DEVICE=Laptop WIDTH='1200' HEIGHT='700' SERVICE='geckodriver' npm run test",
     "test-chrome-laptop": "env DEVICE=Laptop WIDTH='1200' HEIGHT='700' SERVICE='chromedriver' npm run test",
-    "test-firefox-tablet": "env DEVICE=Tablet WIDTH='768' HEIGHT='700' SERVICE='geckodriver' npm run test",
-    "test-chrome-tablet": "env DEVICE=Tablet WIDTH='768' HEIGHT='700' SERVICE='chromedriver' npm run test",
+    "test-firefox-tablet": "env DEVICE=Tablet WIDTH='788' HEIGHT='700' SERVICE='geckodriver' npm run test",
+    "test-chrome-tablet": "env DEVICE=Tablet WIDTH='788' HEIGHT='700' SERVICE='chromedriver' npm run test",
     "test-chrome-mobile": "env DEVICE=Mobile WIDTH='500' HEIGHT='700' SERVICE='chromedriver' npm run test",
     "test-traditional": "npm run test-firefox-laptop && npm run test-chrome-laptop && npm run test-firefox-tablet && npm run test-chrome-tablet && npm run test-chrome-mobile"
   },
