@@ -13,7 +13,7 @@ function hackathonReporter(task, testName, domId, comparisonResult) {
     assert.strictEqual(true, comparisonResult)
 }
 
-describe('Task 1 - Header location', function () {
+describe('Task 1 – Cross-Device Elements Test', () => {
 
     let searchInputFieldId = '#DIV__customsear__41';
     let searchIconId = '#I__headericon__44';
@@ -29,12 +29,12 @@ describe('Task 1 - Header location', function () {
     browser.setWindowSize(parseInt(viewportWidth), parseInt(viewportHeight));
 
     it('Search input field is displayed', () => {
-        var isDisplayed = browser.$(searchInputFieldId).isDisplayed();
+        let isDisplayed = browser.$(searchInputFieldId).isDisplayed();
         hackathonReporter(1, 'Search input field is displayed', searchInputFieldId, isDisplayed === searchInputFieldDisplayed)
     });
 
     it('Search Icon should be displayed', () => {
-        var isDisplayed = browser.$(searchIconId).isDisplayed();
+        let isDisplayed = browser.$(searchIconId).isDisplayed();
         hackathonReporter(1, 'Search Icon is displayed', searchIconId, isDisplayed)
     });
 });
