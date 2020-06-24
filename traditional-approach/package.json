@@ -4,7 +4,8 @@
   "description": "visual tests hackathon",
   "main": "index.js",
   "dependencies": {
-    "@wdio/cli": "^5.23.0"
+    "@wdio/cli": "^5.23.0",
+    "soft-assert": "^0.2.2"
   },
   "devDependencies": {
     "@wdio/local-runner": "^5.23.0",
