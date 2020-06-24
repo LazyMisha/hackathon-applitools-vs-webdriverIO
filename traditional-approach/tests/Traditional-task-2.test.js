@@ -1,4 +1,4 @@
-const assert = require('assert');
+const assert = require('../node_modules/soft-assert/lib/assertion');
 const fs = require('fs');
 
 const viewportWidth = process.env.WIDTH;
@@ -10,7 +10,7 @@ const reportFile = endPoint.includes('V1') ? 'Traditional-V1-TestResults.txt' : 
 
 function hackathonReporter(task, testName, domId, comparisonResult) {
     fs.appendFileSync(reportFile, `"Task: ${task}, Test Name: ${testName}, DOM Id: ${domId}, Browser: ${browserName}, Viewport: ${viewportWidth + 'x' + viewportHeight}, Device: ${device}, Status: ${(comparisonResult ? "Pass" : "Fail")}\n`);
-    assert.strictEqual(true, comparisonResult)
+    assert._assert(comparisonResult, true, testName)
 }
 
 describe('Task 2 – Shopping Experience Test', () => {
@@ -35,6 +35,6 @@ describe('Task 2 – Shopping Experience Test', () => {
         filterButton.click();
         let count = $$(`#product_grid .grid_item`).length;
 
-        hackathonReporter(1, 'Should be displayed two pairs of black shoes', '#product_grid .grid_item', count === 2);
+        hackathonReporter(2, 'Should be displayed two pairs of black shoes', '#product_grid .grid_item', count === 2);
     });
 });
