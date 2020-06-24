@@ -1,0 +1,65 @@
+"Task: 1, Test Name: Search input field is displayed, DOM Id: #DIV__customsear__41, Browser: Firefox, Viewport: 1200x700, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Search Icon is displayed, DOM Id: #I__headericon__44, Browser: Firefox, Viewport: 1200x700, Device: Laptop, Status: Pass
+"Task: 2, Test Name: Should be displayed two pairs of black shoes, DOM Id: #product_grid .grid_item, Browser: Firefox, Viewport: 1200x700, Device: Laptop, Status: Fail
+"Task: 3, Test Name: Should be displayed correct item size, DOM Id: #DIV__colxlcollg__91, Browser: Firefox, Viewport: 1200x700, Device: Laptop, Status: Fail
+"Task: 3, Test Name: Should be displayed correct item id, DOM Id: #SMALL____84, Browser: Firefox, Viewport: 1200x700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Should be displayed correct new item price, DOM Id: #new_price, Browser: Firefox, Viewport: 1200x700, Device: Laptop, Status: Fail
+"Task: 3, Test Name: Should be displayed correct old item price, DOM Id: #old_price, Browser: Firefox, Viewport: 1200x700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Should be displayed item picture, DOM Id: #shoe_img, Browser: Firefox, Viewport: 1200x700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Should be displayed item title, DOM Id: #shoe_name, Browser: Firefox, Viewport: 1200x700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Should be displayed item discount, DOM Id: #discount, Browser: Firefox, Viewport: 1200x700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Should be displayed item quantity, DOM Id: #quantity_1, Browser: Firefox, Viewport: 1200x700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Should be displayed item rating, DOM Id: //em, Browser: Firefox, Viewport: 1200x700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Should be displayed item "Add to CArt" button, DOM Id: #A__btn__114, Browser: Firefox, Viewport: 1200x700, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Search input field is displayed, DOM Id: #DIV__customsear__41, Browser: Chrome, Viewport: 1200x700, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Search Icon is displayed, DOM Id: #I__headericon__44, Browser: Chrome, Viewport: 1200x700, Device: Laptop, Status: Pass
+"Task: 2, Test Name: Should be displayed two pairs of black shoes, DOM Id: #product_grid .grid_item, Browser: Chrome, Viewport: 1200x700, Device: Laptop, Status: Fail
+"Task: 3, Test Name: Should be displayed correct item size, DOM Id: #DIV__colxlcollg__91, Browser: Chrome, Viewport: 1200x700, Device: Laptop, Status: Fail
+"Task: 3, Test Name: Should be displayed correct item id, DOM Id: #SMALL____84, Browser: Chrome, Viewport: 1200x700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Should be displayed correct new item price, DOM Id: #new_price, Browser: Chrome, Viewport: 1200x700, Device: Laptop, Status: Fail
+"Task: 3, Test Name: Should be displayed correct old item price, DOM Id: #old_price, Browser: Chrome, Viewport: 1200x700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Should be displayed item picture, DOM Id: #shoe_img, Browser: Chrome, Viewport: 1200x700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Should be displayed item title, DOM Id: #shoe_name, Browser: Chrome, Viewport: 1200x700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Should be displayed item discount, DOM Id: #discount, Browser: Chrome, Viewport: 1200x700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Should be displayed item quantity, DOM Id: #quantity_1, Browser: Chrome, Viewport: 1200x700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Should be displayed item rating, DOM Id: //em, Browser: Chrome, Viewport: 1200x700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Should be displayed item "Add to CArt" button, DOM Id: #A__btn__114, Browser: Chrome, Viewport: 1200x700, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Search input field is displayed, DOM Id: #DIV__customsear__41, Browser: Firefox, Viewport: 788x700, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Search Icon is displayed, DOM Id: #I__headericon__44, Browser: Firefox, Viewport: 788x700, Device: Tablet, Status: Pass
+"Task: 2, Test Name: Should be displayed two pairs of black shoes, DOM Id: #product_grid .grid_item, Browser: Firefox, Viewport: 788x700, Device: Tablet, Status: Fail
+"Task: 3, Test Name: Should be displayed correct item size, DOM Id: #DIV__colxlcollg__91, Browser: Firefox, Viewport: 788x700, Device: Tablet, Status: Fail
+"Task: 3, Test Name: Should be displayed correct item id, DOM Id: #SMALL____84, Browser: Firefox, Viewport: 788x700, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Should be displayed correct new item price, DOM Id: #new_price, Browser: Firefox, Viewport: 788x700, Device: Tablet, Status: Fail
+"Task: 3, Test Name: Should be displayed correct old item price, DOM Id: #old_price, Browser: Firefox, Viewport: 788x700, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Should be displayed item picture, DOM Id: #shoe_img, Browser: Firefox, Viewport: 788x700, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Should be displayed item title, DOM Id: #shoe_name, Browser: Firefox, Viewport: 788x700, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Should be displayed item discount, DOM Id: #discount, Browser: Firefox, Viewport: 788x700, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Should be displayed item quantity, DOM Id: #quantity_1, Browser: Firefox, Viewport: 788x700, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Should be displayed item rating, DOM Id: //em, Browser: Firefox, Viewport: 788x700, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Should be displayed item "Add to CArt" button, DOM Id: #A__btn__114, Browser: Firefox, Viewport: 788x700, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Search input field is displayed, DOM Id: #DIV__customsear__41, Browser: Chrome, Viewport: 788x700, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Search Icon is displayed, DOM Id: #I__headericon__44, Browser: Chrome, Viewport: 788x700, Device: Tablet, Status: Pass
+"Task: 2, Test Name: Should be displayed two pairs of black shoes, DOM Id: #product_grid .grid_item, Browser: Chrome, Viewport: 788x700, Device: Tablet, Status: Fail
+"Task: 3, Test Name: Should be displayed correct item size, DOM Id: #DIV__colxlcollg__91, Browser: Chrome, Viewport: 788x700, Device: Tablet, Status: Fail
+"Task: 3, Test Name: Should be displayed correct item id, DOM Id: #SMALL____84, Browser: Chrome, Viewport: 788x700, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Should be displayed correct new item price, DOM Id: #new_price, Browser: Chrome, Viewport: 788x700, Device: Tablet, Status: Fail
+"Task: 3, Test Name: Should be displayed correct old item price, DOM Id: #old_price, Browser: Chrome, Viewport: 788x700, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Should be displayed item picture, DOM Id: #shoe_img, Browser: Chrome, Viewport: 788x700, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Should be displayed item title, DOM Id: #shoe_name, Browser: Chrome, Viewport: 788x700, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Should be displayed item discount, DOM Id: #discount, Browser: Chrome, Viewport: 788x700, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Should be displayed item quantity, DOM Id: #quantity_1, Browser: Chrome, Viewport: 788x700, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Should be displayed item rating, DOM Id: //em, Browser: Chrome, Viewport: 788x700, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Should be displayed item "Add to CArt" button, DOM Id: #A__btn__114, Browser: Chrome, Viewport: 788x700, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Search input field is displayed, DOM Id: #DIV__customsear__41, Browser: Chrome, Viewport: 500x700, Device: Mobile, Status: Fail
+"Task: 1, Test Name: Search Icon is displayed, DOM Id: #A__btnsearchm__59, Browser: Chrome, Viewport: 500x700, Device: Mobile, Status: Pass
+"Task: 2, Test Name: Should be displayed two pairs of black shoes, DOM Id: #product_grid .grid_item, Browser: Chrome, Viewport: 500x700, Device: Mobile, Status: Fail
+"Task: 3, Test Name: Should be displayed correct item size, DOM Id: #DIV__colxlcollg__91, Browser: Chrome, Viewport: 500x700, Device: Mobile, Status: Fail
+"Task: 3, Test Name: Should be displayed correct item id, DOM Id: #SMALL____84, Browser: Chrome, Viewport: 500x700, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Should be displayed correct new item price, DOM Id: #new_price, Browser: Chrome, Viewport: 500x700, Device: Mobile, Status: Fail
+"Task: 3, Test Name: Should be displayed correct old item price, DOM Id: #old_price, Browser: Chrome, Viewport: 500x700, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Should be displayed item picture, DOM Id: #shoe_img, Browser: Chrome, Viewport: 500x700, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Should be displayed item title, DOM Id: #shoe_name, Browser: Chrome, Viewport: 500x700, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Should be displayed item discount, DOM Id: #discount, Browser: Chrome, Viewport: 500x700, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Should be displayed item quantity, DOM Id: #quantity_1, Browser: Chrome, Viewport: 500x700, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Should be displayed item rating, DOM Id: //em, Browser: Chrome, Viewport: 500x700, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Should be displayed item "Add to CArt" button, DOM Id: #A__btn__114, Browser: Chrome, Viewport: 500x700, Device: Mobile, Status: Pass
