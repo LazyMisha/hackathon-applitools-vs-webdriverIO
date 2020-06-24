@@ -120,7 +120,7 @@ exports.config = {
     framework: 'mocha',
     //
     // The number of times to retry the entire specfile when it fails as a whole
-    // specFileRetries: 1,
+    specFileRetries: 0,
     //
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
