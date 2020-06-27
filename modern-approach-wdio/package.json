@@ -1,0 +1,17 @@
+{
+  "name": "hackathon-applitools-webdriverIO-modern",
+  "version": "1.0.0",
+  "description": "WebdriverIO Applitools Visual Grid hackathon",
+  "main": "../index.js",
+  "scripts": {
+    "test": "mocha ./test/*test.js -t 300000"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "webdriverio": "^5.23.0",
+    "mocha": "latest-6"
+  },
+  "devDependencies": {
+    "@applitools/eyes-webdriverio": "^5.14.2"
+  }
+}
