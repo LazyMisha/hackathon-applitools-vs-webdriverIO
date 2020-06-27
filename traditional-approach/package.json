@@ -1,5 +1,5 @@
 {
-  "name": "hackathon-applitools-webdriverIO",
+  "name": "hackathon-applitools-webdriverIO-traditional",
   "version": "1.0.0",
   "description": "visual tests hackathon",
   "main": "index.js",
