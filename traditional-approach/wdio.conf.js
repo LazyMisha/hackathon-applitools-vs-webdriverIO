@@ -159,13 +159,33 @@ exports.config = {
     // beforeSession: function (config, capabilities, specs) {
     // },
     /**
+     * Variables needed to run tests against proper browser
+     * */
+    endPoint : process.env.VERSION,
+    viewportWidth : process.env.WIDTH,
+    viewportHeight : process.env.HEIGHT,
+    device : process.env.DEVICE,
+    /**
+     * Method generate and save test results
+     * */
+    hackathonReporter : function(task, testName, domId, comparisonResult) {
+        const browserName = process.env.SERVICE === 'geckodriver' ? 'Firefox' : 'Chrome';
+        const reportFile = this.endPoint.includes('V1') ? 'Traditional-V1-TestResults.txt' : 'Traditional-V2-TestResults.txt';
+        const fs = require('fs');
+        const assert = require('./node_modules/soft-assert/lib/assertion');
+        fs.appendFileSync(reportFile, `"Task: ${task}, Test Name: ${testName}, DOM Id: ${domId}, Browser: ${browserName}, Viewport: ${this.viewportWidth + 'x' + this.viewportHeight}, Device: ${this.device}, Status: ${(comparisonResult ? "Pass" : "Fail")}\n`);
+        assert._assert(comparisonResult, true, testName)
+    },
+    /**
      * Gets executed before test execution begins. At this point you can access to all global
      * variables like `browser`. It is the perfect place to define custom commands.
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {Array.<String>} specs List of spec file paths that are to be run
      */
-    // before: function (capabilities, specs) {
-    // },
+    before: function (capabilities, specs) {
+        browser.url(this.endPoint);
+        browser.setWindowSize(parseInt(this.viewportWidth), parseInt(this.viewportHeight));
+    },
     /**
      * Runs before a WebdriverIO command gets executed.
      * @param {String} commandName hook command name
