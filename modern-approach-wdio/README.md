@@ -15,5 +15,5 @@
 ### Running the example:
 
 1. run `npm i`
-2. run `env VERSION='gridHackathonV1.html' npm run test`
-3. run `env VERSION='gridHackathonV2.html' npm run test`
+2. run `VERSION=V1 npm run test`
+3. run `VERSION=V2 npm run test`
