@@ -1,22 +1,7 @@
-const assert = require('../node_modules/soft-assert/lib/assertion');
-const fs = require('fs');
-
-const viewportWidth = process.env.WIDTH;
-const viewportHeight = process.env.HEIGHT;
-const browserName = process.env.SERVICE === 'geckodriver' ? 'Firefox' : 'Chrome';
-const device = process.env.DEVICE;
-const endPoint = process.env.VERSION;
-const reportFile = endPoint.includes('V1') ? 'Traditional-V1-TestResults.txt' : 'Traditional-V2-TestResults.txt';
-
-function hackathonReporter(task, testName, domId, comparisonResult) {
-    fs.appendFileSync(reportFile, `"Task: ${task}, Test Name: ${testName}, DOM Id: ${domId}, Browser: ${browserName}, Viewport: ${viewportWidth + 'x' + viewportHeight}, Device: ${device}, Status: ${(comparisonResult ? "Pass" : "Fail")}\n`);
-    assert._assert(comparisonResult, true, testName)
-}
+const env = require('../wdio.conf');
+const device = env.config.device;
 
 describe('Task 2 – Shopping Experience Test', () => {
-
-    browser.url(endPoint);
-    browser.setWindowSize(parseInt(viewportWidth), parseInt(viewportHeight));
 
     it('Should be displayed two pairs of black shoes', () => {
 
@@ -35,6 +20,6 @@ describe('Task 2 – Shopping Experience Test', () => {
         filterButton.click();
         let count = $$(`#product_grid .grid_item`).length;
 
-        hackathonReporter(2, 'Should be displayed two pairs of black shoes', '#product_grid .grid_item', count === 2);
+        env.config.hackathonReporter(2, 'Should be displayed two pairs of black shoes', '#product_grid .grid_item', count === 2);
     });
 });

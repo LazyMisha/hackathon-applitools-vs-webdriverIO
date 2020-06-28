@@ -1,17 +1,5 @@
-const assert = require('../node_modules/soft-assert/lib/assertion');
-const fs = require('fs');
-
-const viewportWidth = process.env.WIDTH;
-const viewportHeight = process.env.HEIGHT;
-const browserName = process.env.SERVICE === 'geckodriver' ? 'Firefox' : 'Chrome';
-const device = process.env.DEVICE;
-const endPoint = process.env.VERSION;
-const reportFile = endPoint.includes('V1') ? 'Traditional-V1-TestResults.txt' : 'Traditional-V2-TestResults.txt';
-
-function hackathonReporter(task, testName, domId, comparisonResult) {
-    fs.appendFileSync(reportFile, `"Task: ${task}, Test Name: ${testName}, DOM Id: ${domId}, Browser: ${browserName}, Viewport: ${viewportWidth + 'x' + viewportHeight}, Device: ${device}, Status: ${(comparisonResult ? "Pass" : "Fail")}\n`);
-    assert._assert(comparisonResult, true, testName)
-}
+const env = require('../wdio.conf');
+const device = env.config.device;
 
 describe('Task 1 – Cross-Device Elements Test', () => {
 
@@ -25,16 +13,13 @@ describe('Task 1 – Cross-Device Elements Test', () => {
         searchInputFieldDisplayed = false;
     }
 
-    browser.url(endPoint);
-    browser.setWindowSize(parseInt(viewportWidth), parseInt(viewportHeight));
-
     it('Search input field is displayed', () => {
         let isDisplayed = browser.$(searchInputFieldId).isDisplayed();
-        hackathonReporter(1, 'Search input field is displayed', searchInputFieldId, isDisplayed === searchInputFieldDisplayed)
+        env.config.hackathonReporter(1, 'Search input field is displayed', searchInputFieldId, isDisplayed === searchInputFieldDisplayed)
     });
 
     it('Search Icon should be displayed', () => {
         let isDisplayed = browser.$(searchIconId).isDisplayed();
-        hackathonReporter(1, 'Search Icon is displayed', searchIconId, isDisplayed)
+        env.config.hackathonReporter(1, 'Search Icon is displayed', searchIconId, isDisplayed)
     });
 });

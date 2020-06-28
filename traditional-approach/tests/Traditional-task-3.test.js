@@ -1,22 +1,7 @@
-const assert = require('../node_modules/soft-assert/lib/assertion');
-const fs = require('fs');
-
-const viewportWidth = process.env.WIDTH;
-const viewportHeight = process.env.HEIGHT;
-const browserName = process.env.SERVICE === 'geckodriver' ? 'Firefox' : 'Chrome';
-const device = process.env.DEVICE;
-const endPoint = process.env.VERSION;
-const reportFile = endPoint.includes('V1') ? 'Traditional-V1-TestResults.txt' : 'Traditional-V2-TestResults.txt';
-
-function hackathonReporter(task, testName, domId, comparisonResult) {
-    fs.appendFileSync(reportFile, `"Task: ${task}, Test Name: ${testName}, DOM Id: ${domId}, Browser: ${browserName}, Viewport: ${viewportWidth + 'x' + viewportHeight}, Device: ${device}, Status: ${(comparisonResult ? "Pass" : "Fail")}\n`);
-    assert._assert(comparisonResult, true, testName)
-}
+const env = require('../wdio.conf');
+const device = env.config.device;
 
 describe('Task 3 – Product Details Test', () => {
-
-    browser.url(endPoint);
-    browser.setWindowSize(parseInt(viewportWidth), parseInt(viewportHeight));
 
     it('Should be displayed correct item size', () => {
 
@@ -41,7 +26,7 @@ describe('Task 3 – Product Details Test', () => {
         size.waitForExist({ timeout: 5000 });
         let isSizeCorrect = size.getText() === 'Small (S)';
 
-        hackathonReporter(3, 'Should be displayed correct item size', '#DIV__colxlcollg__91', isSizeCorrect);
+        env.config.hackathonReporter(3, 'Should be displayed correct item size', '#DIV__colxlcollg__91', isSizeCorrect);
     });
 
     it('Should be displayed correct item id', () => {
@@ -51,7 +36,7 @@ describe('Task 3 – Product Details Test', () => {
         itemId.waitForDisplayed({ timeout: 5000 });
         let isItemIdCorrect = itemId.getText() === 'SKU: MTKRY-001';
 
-        hackathonReporter(3, 'Should be displayed correct item id', '#SMALL____84', isItemIdCorrect);
+        env.config.hackathonReporter(3, 'Should be displayed correct item id', '#SMALL____84', isItemIdCorrect);
     });
 
     it('Should be displayed correct new item price', () => {
@@ -61,7 +46,7 @@ describe('Task 3 – Product Details Test', () => {
         newItemPrice.waitForDisplayed({ timeout: 5000 });
         let isNewItemPriceCorrect = newItemPrice.getText() === '$33.00';
 
-        hackathonReporter(3, 'Should be displayed correct new item price', '#new_price', isNewItemPriceCorrect);
+        env.config.hackathonReporter(3, 'Should be displayed correct new item price', '#new_price', isNewItemPriceCorrect);
     });
 
     it('Should be displayed correct old item price', () => {
@@ -71,7 +56,7 @@ describe('Task 3 – Product Details Test', () => {
         oldItemPrice.waitForDisplayed({ timeout: 5000 });
         let isOldItemPriceCorrect = oldItemPrice.getText() === '$48.00';
 
-        hackathonReporter(3, 'Should be displayed correct old item price', '#old_price', isOldItemPriceCorrect);
+        env.config.hackathonReporter(3, 'Should be displayed correct old item price', '#old_price', isOldItemPriceCorrect);
     });
 
     it('Should be displayed item picture', () => {
@@ -81,7 +66,7 @@ describe('Task 3 – Product Details Test', () => {
         itemImage.waitForDisplayed({ timeout: 5000 });
         let isItemImageCorrect = itemImage.isDisplayed();
 
-        hackathonReporter(3, 'Should be displayed item picture', '#shoe_img', isItemImageCorrect);
+        env.config.hackathonReporter(3, 'Should be displayed item picture', '#shoe_img', isItemImageCorrect);
     });
 
     it('Should be displayed item title', () => {
@@ -91,7 +76,7 @@ describe('Task 3 – Product Details Test', () => {
         itemName.waitForDisplayed({ timeout: 5000 });
         let isItemNameCorrect = itemName.getText() === 'Appli Air x Night';
 
-        hackathonReporter(3, 'Should be displayed item title', '#shoe_name', isItemNameCorrect);
+        env.config.hackathonReporter(3, 'Should be displayed item title', '#shoe_name', isItemNameCorrect);
     });
 
     it('Should be displayed item discount', () => {
@@ -101,7 +86,7 @@ describe('Task 3 – Product Details Test', () => {
         itemDiscount.waitForDisplayed({ timeout: 5000 });
         let isItemDiscountCorrect = itemDiscount.getText() === '-30% discount';
 
-        hackathonReporter(3, 'Should be displayed item discount', '#discount', isItemDiscountCorrect);
+        env.config.hackathonReporter(3, 'Should be displayed item discount', '#discount', isItemDiscountCorrect);
     });
 
     it('Should be displayed item quantity', () => {
@@ -111,7 +96,7 @@ describe('Task 3 – Product Details Test', () => {
         itemQuantity.waitForDisplayed({ timeout: 5000 });
         let isItemQuantityCorrect = itemQuantity.getValue() === '1';
 
-        hackathonReporter(3, 'Should be displayed item quantity', '#quantity_1', isItemQuantityCorrect);
+        env.config.hackathonReporter(3, 'Should be displayed item quantity', '#quantity_1', isItemQuantityCorrect);
     });
 
     it('Should be displayed item rating', () => {
@@ -121,7 +106,7 @@ describe('Task 3 – Product Details Test', () => {
         itemRating.waitForExist({ timeout: 5000 });
         let isItemRatingCorrect = itemRating.getText() === '4 reviews';
 
-        hackathonReporter(3, 'Should be displayed item rating', '//em', isItemRatingCorrect);
+        env.config.hackathonReporter(3, 'Should be displayed item rating', '//em', isItemRatingCorrect);
     });
 
     it('Should be displayed item "Add to CArt" button', () => {
@@ -131,6 +116,6 @@ describe('Task 3 – Product Details Test', () => {
         addToCartButton.waitForDisplayed({ timeout: 5000 });
         let isbuttonDisplayed = addToCartButton.isDisplayed();
 
-        hackathonReporter(3, 'Should be displayed item "Add to CArt" button', '#A__btn__114', isbuttonDisplayed);
+        env.config.hackathonReporter(3, 'Should be displayed item "Add to CArt" button', '#A__btn__114', isbuttonDisplayed);
     });
 });
