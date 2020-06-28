@@ -5,6 +5,6 @@
 > npm i
 
 **run tests**
->  env VERSION='gridHackathonV1.html' npm run test-traditional
+>  env VERSION=V1 npm run test-traditional
 
->  env VERSION='gridHackathonV2.html' npm run test-traditional
+>  env VERSION=V2 npm run test-traditional
