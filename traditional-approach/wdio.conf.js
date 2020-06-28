@@ -161,7 +161,7 @@ exports.config = {
     /**
      * Variables needed to run tests against proper browser
      * */
-    endPoint : process.env.VERSION,
+    endPoint : `gridHackathon${process.env.VERSION}.html`,
     viewportWidth : process.env.WIDTH,
     viewportHeight : process.env.HEIGHT,
     device : process.env.DEVICE,
