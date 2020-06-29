@@ -88,7 +88,7 @@ describe('Task 2 – Shopping Experience Test', function () {
 
     // check the page with fluent api, see more info here
     // https://applitools.com/docs/topics/sdk/the-eyes-sdk-check-fluent-api.html
-    await eyes.check('Should have 2 black shoes', Target.window());
+    await eyes.check('Should have 2 black shoes', Target.window().fully());
 
     const product_grid = await browser.$('#product_grid');
     eyes.checkRegion(product_grid, 'Grid Results');
