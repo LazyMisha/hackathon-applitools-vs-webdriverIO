@@ -18,7 +18,7 @@ const {
 let browser;
 let eyes;
 
-describe('Task 3 – Product Details Test', function () {
+describe('Task 3', function () {
   let runner;
 
   before(async () => {
@@ -64,7 +64,7 @@ describe('Task 3 – Product Details Test', function () {
     eyes.setConfiguration(configuration);
   });
 
-  it('Should be displayed correct item information', async () => {
+  it('Product Details test', async () => {
     await browser.url(url);
 
     const blackCheckBox = await browser.$('#SPAN__checkmark__107');
@@ -84,7 +84,7 @@ describe('Task 3 – Product Details Test', function () {
     );
 
     await eyes.check(
-      'Should be displayed correct item information',
+      'Product Details test',
       Target.window().fully()
     );
 

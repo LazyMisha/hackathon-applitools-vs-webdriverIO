@@ -18,7 +18,7 @@ const {
 let browser;
 let eyes;
 
-describe('Task 2 – Shopping Experience Test', function () {
+describe('Task 2', function () {
   let runner;
 
   before(async () => {
@@ -64,7 +64,7 @@ describe('Task 2 – Shopping Experience Test', function () {
     eyes.setConfiguration(configuration);
   });
 
-  it('Should be displayed two pairs of black shoes', async () => {
+  it('Filter Results', async () => {
     await browser.url(url);
 
     const blackCheckBox = await browser.$('#SPAN__checkmark__107');
@@ -83,12 +83,8 @@ describe('Task 2 – Shopping Experience Test', function () {
       new RectangleSize(800, 600)
     );
 
-    // check the page with fluent api, see more info here
-    // https://applitools.com/docs/topics/sdk/the-eyes-sdk-check-fluent-api.html
-    await eyes.check('Should have 2 black shoes', Target.window().fully());
-
     const product_grid = await browser.$('#product_grid');
-    eyes.checkRegion(product_grid, 'Grid Results');
+    await eyes.check('Filter Results', Target.region(product_grid));
 
     // Call Close on eyes to let the server know it should display the results
     await eyes.closeAsync();

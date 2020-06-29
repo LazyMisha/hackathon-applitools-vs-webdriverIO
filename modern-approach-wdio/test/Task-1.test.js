@@ -18,7 +18,7 @@ const {
 let browser;
 let eyes;
 
-describe('Task 1 – Cross-Device Elements Test', function () {
+describe('Task 1', function () {
   let runner;
 
   before(async () => {
@@ -64,7 +64,7 @@ describe('Task 1 – Cross-Device Elements Test', function () {
     eyes.setConfiguration(configuration);
   });
 
-  it('Search input field should be displayed', async () => {
+  it('Cross-Device Elements Test', async () => {
     await browser.url(url);
 
     // Call Open on eyes to initialize a test session
@@ -75,10 +75,8 @@ describe('Task 1 – Cross-Device Elements Test', function () {
       new RectangleSize(800, 600)
     );
 
-    // check the page with fluent api, see more info here
-    // https://applitools.com/docs/topics/sdk/the-eyes-sdk-check-fluent-api.html
     await eyes.check(
-      'Search input field should be displayed',
+      'Cross-Device Elements Test',
       Target.window().fully()
     );
 
