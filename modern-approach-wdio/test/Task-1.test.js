@@ -70,8 +70,8 @@ describe('Task 1 – Cross-Device Elements Test', function () {
     // Call Open on eyes to initialize a test session
     await eyes.open(
       browser,
-      'gridHackathonV1',
-      'Ultrafast grid gridHackathonV1',
+      'gridHackathon',
+      'Ultrafast grid gridHackathon',
       new RectangleSize(800, 600)
     );
 
