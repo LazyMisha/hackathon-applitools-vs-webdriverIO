@@ -69,9 +69,6 @@ describe('Task 2 – Shopping Experience Test', function () {
 
     const blackCheckBox = await browser.$('#SPAN__checkmark__107');
     const filterButton = await browser.$('#filterBtn');
-    const openFilterButton = await browser.$(
-      '//a[@id="A__openfilter__207" or @id="A__openfilter__206"]'
-    );
 
     blackCheckBox.waitForClickable({ timeout: 5000 });
     blackCheckBox.click();
