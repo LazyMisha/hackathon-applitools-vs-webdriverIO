@@ -78,8 +78,8 @@ describe('Task 3', function () {
     // Call Open on eyes to initialize a test session
     await eyes.open(
       browser,
-      'gridHackathon',
       'Ultrafast grid gridHackathon',
+      'Task 3 - Product Details test',
       new RectangleSize(800, 600)
     );
 
